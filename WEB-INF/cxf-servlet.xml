@@ -28,7 +28,7 @@
 		id="firma" 
 		address="/Firma"
 		implementor="rs.ac.uns.ftn.xws.cbs.firma.FirmaImpl"
-		wsdlLocation="WEB-INF/wsdl/Firma.wsdl"/>
+		wsdlLocation="WEB-INF/xml/Firma.wsdl"/>
 
 
 </beans>
