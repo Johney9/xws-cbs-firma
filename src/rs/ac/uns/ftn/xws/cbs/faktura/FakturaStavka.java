@@ -2,6 +2,7 @@
 package rs.ac.uns.ftn.xws.cbs.faktura;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -20,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="redni_broj">
  *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}positiveInteger">
  *               &lt;fractionDigits value="0"/>
  *               &lt;totalDigits value="3"/>
  *             &lt;/restriction>
@@ -36,8 +37,6 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="kolicina">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;totalDigits value="10"/>
- *               &lt;fractionDigits value="2"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
@@ -92,7 +91,7 @@ import javax.xml.bind.annotation.XmlType;
 public class FakturaStavka {
 
     @XmlElement(name = "redni_broj", required = true)
-    protected BigDecimal redniBroj;
+    protected BigInteger redniBroj;
     @XmlElement(name = "naziv_robe_ili_usluge", required = true)
     protected String nazivRobeIliUsluge;
     @XmlElement(required = true)
@@ -117,10 +116,10 @@ public class FakturaStavka {
      * 
      * @return
      *     possible object is
-     *     {@link BigDecimal }
+     *     {@link BigInteger }
      *     
      */
-    public BigDecimal getRedniBroj() {
+    public BigInteger getRedniBroj() {
         return redniBroj;
     }
 
@@ -129,10 +128,10 @@ public class FakturaStavka {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigDecimal }
+     *     {@link BigInteger }
      *     
      */
-    public void setRedniBroj(BigDecimal value) {
+    public void setRedniBroj(BigInteger value) {
         this.redniBroj = value;
     }
 
