@@ -10,6 +10,7 @@
             <xs:sequence>
                 <xs:element name="id_pib_firme" type="t:TPIB"/>
                 <xs:element name="naziv_aplikacije" type="xs:Name"/>
+                <xs:element name="broj_racuna" form="qualified" maxOccurs="1" minOccurs="1" type="t:TRacun"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

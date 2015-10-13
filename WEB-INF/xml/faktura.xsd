@@ -41,7 +41,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
-            <xs:element name="datum_racuna"/>
+            <xs:element name="datum_racuna" type="xs:date"/>
             <xs:element name="vrednost_robe" type="t:TIznos"/>
             <xs:element name="vrednost_usluga" type="t:TIznos"/>
             <xs:element name="ukupno_roba_i_usluge" type="t:TIznos"/>
