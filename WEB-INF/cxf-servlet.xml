@@ -25,10 +25,10 @@
 		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
 	<jaxws:endpoint 
-		id="firma" 
-		address="/Firma"
-		implementor="rs.ac.uns.ftn.xws.cbs.firma.FirmaImpl"
-		wsdlLocation="WEB-INF/xml/Firma.wsdl"/>
+		id="firmaXWS" 
+		address="/XWSFirma"
+		implementor="rs.ac.uns.ftn.xws.cbs.firma.XWSFirmaImpl"
+		wsdlLocation="WEB-INF/xml/XWSFirma.wsdl"/>
 
 
 </beans>
